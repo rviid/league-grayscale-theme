@@ -1,0 +1,995 @@
+/*
+  Purple theme by floyare
+  version 0.3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0)
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30%, 0);
+    transform: translate3d(0, -30%, 0)
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+body{
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+div[data-screen-name='rcp-fe-lol-navigation-screen'] {
+    height: 79px;
+    width: 1278px;
+    border-top: 0px solid #808080!important;
+    box-sizing: border-box;
+}
+
+#rcp-fe-viewport-root {
+    display: flex;
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    border-right: 2px solid #000!important;
+    border-left: 2px solid #000!important;
+    border-bottom: 2px solid #000!important;
+    border-top: 2px solid #000!important;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #000; 
+}
+
+#rcp-fe-viewport-root #rcp-fe-lol-navigation-app {
+    pointer-events: none;
+    position: relative;
+    z-index: 10;
+    background: #000!important;
+}
+
+.lol-social-sidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #808080;
+    font-size: 12px;
+    cursor: default;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    background: #000!important;
+}
+
+.section, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff!important;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    transition: text-shadow 0.3s ease-in-out, background 1.5s;
+    width: 100%;
+    height: 100%;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+.section.active .section-glow {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    margin: 0;
+}
+
+.section.active, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section.active {
+    color: #000;
+    text-shadow: 0px 0px 21px #808080!important;
+    /* opacity: 1; */
+}
+
+ .section.active {
+    background-image: linear-gradient(0deg, rgba(128, 128, 128, 0.3) 0%, rgba(0, 0, 0, 0.19) 55%)!important;
+}
+
+.section.active, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section.active {
+    color: #ffffff!important;
+    text-shadow: 0px 1px 15px white!important;
+    font-family: 'Orbitron', sans-serif!important;
+}
+
+.section, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #808080!important;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    transition: text-shadow 0.3s ease-in-out, background 1.5s;
+    width: 100%;
+    height: 100%;
+    min-height: 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif!important;
+}
+
+::content .lol-uikit-video-content {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    filter: grayscale(100%)!important;
+}
+
+lol-uikit-full-page-backdrop {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(80, 80, 80, 0.8) 93%)!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.loot-backdrop {
+    position: absolute;
+    width: 1055px;
+    height: 718px;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.game-type-card .parties-game-type-upper-half {
+    position: relative;
+    cursor: pointer;
+    width: 185px;
+    height: 230px;
+    filter: grayscale(100%);
+}
+
+.parties-header-button-container .back-button-container.back-button-shown {
+    display: block;
+    filter: saturate(0);
+}
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-full-screen {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+    box-shadow: inset 0px 0px 40px rgba(128, 128, 128, 0.23);
+}
+
+.availability-icon{
+    background-color: #fff !important;
+    border-color: #fff !important;
+    border-radius: 10px;
+}
+
+.availability-icon.mobile{
+  background-color: transparent !important;
+}
+
+.availability-icon.away{
+    background-color: #808080 !important;
+    border-color: #808080 !important;
+}
+
+.status-message.offline{
+  color: #000 !important;
+}
+
+.status-message-wrapper{
+  color: #808080 !important;
+}
+
+.status-message.chat{
+  color: #808080 !important;
+}
+
+.status-message.game-status.chat{
+  color: #808080 !important;
+}
+
+
+
+.lol-loading-screen-lol-icon{
+  background-image: url('https://i.ibb.co/JvK3zcB/heart.jpg') !important;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state .lol-loading-screen-status-container{
+  margin-top: -60px !important;
+}
+
+.play-button-container{
+  background-image: none !important; /*url('http://mmmx22.ct8.pl/play-button-violet.png') !important;*/
+  background: linear-gradient(-90deg, #000, #000) !important;
+  border-radius: 50px !important;
+  border: 2px solid #808080!important;
+  filter: drop-shadow(1px 1px 8px #808080) !important;
+  transition: 0.2s !important;
+  cursor: pointer;
+}
+
+.play-button-container:hover{
+  filter: drop-shadow(1px 1px 15px #808080) !important;
+  transition: 0.2s !important;
+}
+
+.play-button-content{
+    width: calc(100% - 52px) !important;
+}
+
+.play-button-text{
+  color: #fff !important;
+  font-family: 'Open Sans', sans-serif !important;
+  content: '▶ PLAY' !important;
+  visibility: hidden;
+  z-index: 0 !important;
+}
+
+.play-button-text:after{
+    content:'\25B6  PLAY'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+  right: 11px !important;
+}
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-overlay > .screen-root[style*="visibility: hidden;"] ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] + .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] + .play-button-text:after {
+  visibility: hidden !important;
+}
+
+
+
+
+
+.champion-select-main-container:not(:hidden) ~ .play-button-text:after{
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.champion-select-main-container:visible .play-button-text:after{
+  display: none !important;
+}
+
+.play-button-container:hover .play-button-text:after{
+  color: #C7C7C7 !important;
+}
+
+.play-button-container:active .play-button-text:after{
+  color: #C7C7C7 !important;
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state{
+  /* background: url('https://i.ibb.co/QcgNzKT/7f7ce09a2a883002643f442a7e7ddfaf.jpg') #0F051F no-repeat !important; */
+  background: #000 !important;
+  /* opacity: 0.6 !important;  */
+}
+
+.lol-loading-screen-container{
+  backdrop-filter: blur(10px);
+}
+
+lol-social-roster-member .open-party .open-party-indicator{
+  background: #808080 !important;
+}
+
+lol-social-roster-member .open-party-indicator{
+  background: #808080 !important;
+}
+
+.status-message.open-party.chat{
+  color: #808080 !important;
+}
+
+.filled.xp-ring{
+  background-color: #fff !important;
+}
+
+lol-social-status .status-message.dnd{
+  color: #808080 !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+:host .lol-uikit-background-switcher-image{
+  content: url(https://i.ibb.co/JrgzYXg/grunge.jpg) !important;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  filter:blur(10px);
+  width: auto !important;
+}
+
+.parties-view .parties-background lol-uikit-background-switcher{
+  content: url(https://i.ibb.co/JrgzYXg/grunge.jpg) !important;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  filter:blur(10px);
+  width: auto !important;
+}
+.parties-view .parties-background .uikit-background-switcher{
+  content: url(https://i.ibb.co/JrgzYXg/grunge.jpg) !important;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  filter:blur(10px);
+  width: auto !important;
+}
+
+.action-bar-button{
+  filter: grayscale(100%);
+}
+
+.alpha-version-panel{
+  filter: grayscale(100%);
+}
+
+.summoner-level-ring{
+  filter: grayscale(100%);
+}
+
+.summoner-level{
+  filter: grayscale(100%);
+}
+
+.navigation-bar{
+  filter: grayscale(100%);
+}
+
+.dropdown-container{
+  filter: grayscale(100%);
+  position: relative;
+  z-index: 3;
+}
+
+.cdp-backdrop-component .cdp-backdrop.progression:after{
+  filter: grayscale(100%);
+}
+
+.parties-game-type-card-categories{
+  filter: grayscale(100%);
+}
+
+lol-uikit-flat-input{
+  filter: grayscale(100%);
+}
+
+lol-uikit-close-button{
+  filter: grayscale(100%);
+}
+
+lol-social-avatar:not([disabled]):hover .summoner-level-ring{
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+.lol-uikit-dialog-frame {
+  filter: grayscale(100%);
+}
+
+/* lol-uikit-navigation-bar{
+  filter: grayscale(100%);
+} */
+
+.navigation-bar.left{
+  filter: grayscale(100%);
+}
+
+lol-uikit-close-button{
+  filter: grayscale(100%);
+}
+
+lol-regalia-banner-v2-element{
+  filter: grayscale(100%);
+}
+
+.style-profile-emblem-header-title{
+  filter: grayscale(100%) !important;
+}
+
+/* lol-uikit-dialog-frame::part(.lol-uikit-dialog-frame){
+  border: 2px solid transparent !important;
+  border-image: linear-gradient(to top, red 0, green 5px, blue 100%) 1 stretch !important;
+} */
+
+:host .lol-uikit-dialog-frame.top .lol-uikit-dialog-frame-sub-border::before, :host .lol-uikit-dialog-frame.bottom .lol-uikit-dialog-frame-sub-border::before{
+  filter: grayscale(100%) !important;
+}
+
+:host .lol-uikit-dialog-frame.top .lol-uikit-dialog-frame-sub-border::after, :host .lol-uikit-dialog-frame.bottom .lol-uikit-dialog-frame-sub-border::after{
+  filter: grayscale(100%) !important;
+}
+
+/* COLLECTION */
+
+.collections-application{
+  position: relative;
+  isolation: isolate;
+}
+
+.collections-application:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  mix-blend-mode: hue;
+  background-color:#000;
+  z-index: 1;
+}
+
+.collections-routes{
+  position: relative;
+  z-index: 10;
+}
+
+/* YOUR SHOP */
+
+.yourshop-root{
+  position: relative;
+  isolation: isolate;
+}
+
+.yourshop-root:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  mix-blend-mode: hue;
+  background-color:rgb(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.yourshop-content-wrapper{
+  position: relative;
+  z-index: 2;
+}
+
+/* STORE */
+.store-backdrop {
+  position: relative;
+  isolation: isolate;
+}
+
+.__rcp-fe-lol-store .navbar.clearfix .nav.nav-tabs{
+  filter: grayscale(100%) !important;
+}
+
+.store-backdrop:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  mix-blend-mode: hue;
+  background-color:#000;
+  z-index: -1;
+}
+
+.__rcp-fe-lol-store{
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card-unrevealed-loop-video{
+  filter: grayscale(100%) !important;
+}
+
+.loot-display-category-tab .loot-category-tab.selected::after{
+  filter: grayscale(100%) !important;
+}
+
+hr{
+  filter: grayscale(100%) !important;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background-color: #fff !important;
+}
+
+.recipe-help-button{
+  filter: grayscale(100%) !important;
+}
+
+.border{
+  filter: grayscale(100%) !important;
+}
+
+.loot-tray::before{
+  filter: grayscale(100%) !important;
+}
+
+.loot-to-store-button {
+  filter: grayscale(100%) !important;
+}
+
+lol-uikit-tooltip-root{
+  filter: grayscale(100%) !important;
+}
+
+#lol-uikit-tooltip-root > div{
+  filter: grayscale(100%) !important;
+}
+
+.style-profile-sub-nav{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-close-button{
+  filter: grayscale(100%) !important;
+}
+
+.style-profile-skin-picker-button {
+  filter: grayscale(100%) !important;
+}
+
+.collection-details{
+  filter: grayscale(100%) !important;
+}
+
+.collection-ownership-filter {
+  filter: grayscale(100%) !important;
+}
+
+.collection-grouping-options{
+  filter: grayscale(100%) !important;
+}
+
+.collection-sort-options{
+  filter: grayscale(100%) !important;
+}
+
+.lock-icon{
+  filter: grayscale(100%) !important;
+}
+
+.champion-mastery-badge{
+  filter: grayscale(100%) !important;
+}
+
+.yourshop-header-riot {
+  filter: grayscale(100%) !important;
+}
+
+.yourshop-footer-riot-expiration{
+  filter: grayscale(100%) !important;
+}
+
+.yourshop-footer-riot-notice{
+  filter: grayscale(100%) !important;
+}
+
+.yourshop-footer-riot-notice{
+  filter: grayscale(100%) !important;
+}
+
+.nav-tab{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-flat-button-normal{
+  filter: grayscale(100%) !important;
+}
+
+.nav-btn-gifting{
+  filter: grayscale(100%) !important;
+}
+
+.nav-btn-accounts{
+  filter: grayscale(100%) !important;
+}
+
+/* lol-uikit-navigation-item{
+  filter: grayscale(100%) !important;
+} */
+
+.button-type-secondary{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-flyout-frame-wrapper{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-flat-button-inner{
+  filter: grayscale(100%) !important;
+}
+
+.loot-recipe-help-container::before{
+  filter: grayscale(100%) !important;
+}
+
+.loading-spinner{
+  filter: grayscale(100%) !important;
+}
+
+#ember821 > div > svg > g{
+  filter: grayscale(100%) !important;
+}
+
+.hextech-loading-animation{
+  filter: grayscale(100%) !important;
+}
+
+.icon-ring{
+  filter: grayscale(100%) !important;
+}
+
+.conversation-close-button{
+  filter: grayscale(100%) !important;
+}
+
+.chat-header{
+  border-bottom: thin solid #808080 !important;
+}
+
+lol-social-chat-input .chat-input{
+  filter: grayscale(100%) !important;
+}
+
+/* LOADING */
+.lol-loading-screen-status-text{
+  filter: grayscale(100%) !important;
+}
+
+.lol-loading-screen-spinner{
+  filter: grayscale(100%) !important;
+}
+
+.lol-loading-screen-progress-bar-frame{
+  filter: grayscale(100%) !important;
+}
+
+.lol-loading-screen-progress-bar-progress{
+  filter: grayscale(100%) !important;
+}
+
+.email{
+  filter: grayscale(100%) !important;
+}
+
+.heading{
+  border-bottom: thin solid #808080 !important;
+}
+
+.dialog-frame{
+  filter: grayscale(100%) !important;
+}
+
+.dialog-content{
+  filter: grayscale(100%) !important;
+} 
+
+:host .lol-uikit-flyout-frame-wrapper.top .sub-border::before, :host .lol-uikit-flyout-frame-wrapper.bottom .sub-border::before{
+  filter: grayscale(100%) !important;
+}
+
+:host .lol-uikit-flyout-frame-wrapper.bottom .border{
+  filter: grayscale(100%) !important;
+}
+
+lol-uikit-flat-button-group{
+  /* filter: grayscale(100%); */
+}
+
+lol-uikit-flat-button-secondary{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-dialog-frame-sub-border::before{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-dialog-frame-sub-border::after{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-dialog-frame-close-button::before{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-dialog-frame-sub-border{
+  filter: grayscale(100%) !important;
+}
+
+.lol-uikit-dialog-frame{
+  filter: grayscale(100%) !important;
+}
+
+.mission-tooltip{
+  filter: grayscale(100%) !important;
+}
+
+.flyout{
+  filter: grayscale(100%) !important;
+}
+
+.mission-icon, .mission-reward  {
+  filter: grayscale(100%) !important;
+}
+
+/* .mission-tracker-component{
+  filter: grayscale(131deg) !important;
+} */
+
+/* NAVIGATION */
+
+.rcp-fe-lol-collections-collection-details {
+  filter: grayscale(100%) !important;
+}
+
+.collection-tier-information{
+  filter: grayscale(100%) !important;
+}
+
+.collection-tier-information{
+  filter: grayscale(100%) !important;
+}
+
+.collection-bottom-info{
+  filter: grayscale(100%) !important;
+}
+
+.collections-sub-nav-container{
+  z-index: 10 !important;
+  filter: grayscale(100%) !important;
+}
+
+
+/*.parties-background lol-uikit-background-switcher{
+  content: url(http://mmmx22.ct8.pl/bc.jpg) !important;
+  width: auto !important;
+}*/
+
+/*.uikit-background-switcher .lol-uikit-background-switcher-image{
+    content: url(http://mmmx22.ct8.pl/bc.jpg) !important;
+  width: auto !important;
+}*/
+
+/*.uikit-background-switcher .lol-uikit-background-switcher-image{
+    content: url(http://mmmx22.ct8.pl/bc.jpg) !important;
+  width: auto !important;
+}*/
+
+
+.basic-button{
+  left: 32vw !important;
+  height: 48px !important;
+  width: 122px !important;
+  top: 15px !important;
+}
+
+.left-nav-menu{
+    position: relative !important;
+    margin-left: -200px !important;
+}
+
+.league-logo{
+  display: none !important;
+}
+
+.play-button-frame{
+  background-image: none !important;
+}
+
+:host .parties-game-search-map.game_map_summoners_rift{
+  background-image: url(http://mmmx22.ct8.pl/Floppa.jpg) !important;
+}
+
+lol-uikit-video-state-machine{
+  display: none !important;
+}
+
+.currency-be-icon-container {
+    filter: grayscale(100%);
+}
+
+.currency-rp {
+    filter: grayscale(100%);
+}
+.availability-icon.chat.remote{
+  /*filter: grayscale(55deg);*/
+  background-color: none !important;
+}
+
+.main-navigation-menu-item{
+  filter: grayscale(100%);
+}
+
+.play-button-content{
+  left: 30px !important;
+}
+
+:host .parties-status-card.open {
+    filter: grayscale(100%) !important;
+}
+
+.player-notifications-button{
+  filter: grayscale(100%) !important;
+}
+
+.parties-player-positions lol-parties-player-position.primary{
+  filter: grayscale(100%) !important;
+}
+
+.parties-player-positions lol-parties-player-position.secondary{
+  filter: grayscale(100%) !important;
+}
+
+.parties-position-selector-hextech-dashed-ring{
+  filter: grayscale(100%) !important;
+}
+
+.confirm-button-container button.confirm{
+  filter: grayscale(100%) !important;
+}
+
+.parties-footer-notifications .parties-footer-warning{
+  filter: grayscale(100%) !important;
+}
+
+:host .regalia-parties-root[data-type="current-player"] .regalia-parties-banner-backdrop{
+  filter: grayscale(100%) !important;
+}
+
+.open-party-toggle-wrapper .toggle-container .open{
+  filter: grayscale(100%) !important;
+}
+
+lol-social-panel{
+  filter: grayscale(100%) !important;
+}
+
+.lol-social-identity .notifications-button{
+  filter: grayscale(100%) !important;
+}
+
+.placeholder-invited-container .placeholder-invited-image {
+  filter: grayscale(100%) !important;
+}
+
+lol-social-availability-hitbox .availability-icon.open-party{
+  background-image: url(http://mmmx22.ct8.pl/lol-social-open-party.png) !important;
+  background-color: transparent !important;
+}
+
+.availability-icon.chat.remote{
+  background-color: transparent !important;
+  filter: grayscale(100%) !important;
+}
+
+.ready-check-state-machine-timer{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  filter: grayscale(100%) !important;
+}
+
+.ready-check-timer{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.ready-check-timer.ember-view{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.ready-check-root-element{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.ready-check-root-element.ember-view{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.fake-application-template{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.navigation-status-ticker{
+  position: absolute !important;
+  left: 370px !important;
+  top: 24px !important;
+  filter: grayscale(100%);
+}
+
+.mission-button .count-badge{
+  background-color: #000 !important;
+}
+
+
+.in-matchmaking-search .parties-placeholder-banner{
+  filter: grayscale(100%) !important;
+}
+
+.open-party-toggle-wrapper.right .toggle-button{
+  filter: grayscale(100%) !important;
+}
+
+.loot-item-visual .shard-overlay{
+  background: #000 !important;
+}
+
+.social-count-badge{
+  background-color: #000 !important;
+}
+lol-social-friend-requests .friend-requests-header{
+  color: #000 !important;
+}
+
+.chat-bubble .my-bubble{
+  background-color: #000 !important;
+}
+
+lol-social-chat-window .conversation.unread .conversation-subtitle{
+  color: #fff !important;
+}
+
+lol-social-chat-window .conversation.active::before{
+  background-color: #fff !important;
+}
+
+lol-social-roster .more-unread .more-unread-bar{
+  background-color: #fff !important;
+}
