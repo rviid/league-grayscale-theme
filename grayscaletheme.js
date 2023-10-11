@@ -8,5 +8,5 @@ function addCss(filename) {
 
 window.onload = () => {
   // External CDN for css hosting.
-  addCss("https://raw.githack.com/rviid/league-color-theme/main/themebw.css");
+  addCss("https://rawcdn.githack.com/rviid/league-grayscale-theme/35070af63f5d589e21d622a149989134168b9607/grayscaletheme.css");
 }
