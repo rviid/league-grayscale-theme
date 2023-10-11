@@ -1,12 +1,13 @@
-# league-purple-theme
-Purple theme for league-loader.
+# league-grayscale-theme
+Fork of <a href="https://github.com/floyare/league-purple-theme">. Big thanks to floyare.
+Grayscale theme for PenguLoader.
 
-<img src="https://i.ibb.co/Dkn3n56/7-Oat-Osgou-EK2-I.jpg">
+<img src="https://i.ibb.co/BVVRpSt/image.png">
 
 # Required
- * <a href="https://github.com/nomi-san/league-loader">League loader</a>
-    > Version: 0.6.0
+ * <a href="https://github.com/PenguLoader/PenguLoader">Pengu Loader</a>
+    > Version: 1.1.0
 
 # How to install:
- * Copy `purple-theme.js` to your `plugins` folder.
+ * Copy the `grayscaletheme.js` to your `plugins` folder.
 
