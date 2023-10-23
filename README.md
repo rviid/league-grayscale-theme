@@ -4,7 +4,7 @@ Big thanks to floyare.
 
 Grayscale theme for PenguLoader.
 
-<img src="https://i.ibb.co/BVVRpSt/image.png">
+<img src="https://i.ibb.co/nPjSdwx/image.png">
 
 # Required
  * <a href="https://github.com/PenguLoader/PenguLoader">Pengu Loader</a>
