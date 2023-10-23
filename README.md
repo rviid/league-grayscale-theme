@@ -11,5 +11,5 @@ Grayscale theme for PenguLoader.
     > Version: 1.1.0
 
 # How to install:
- * Copy the `grayscaletheme.js` to your `plugins` folder.
+ * Copy the `grayscaletheme.js` and `grayscaletheme.css` to your `plugins` folder.
 
