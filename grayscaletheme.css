@@ -956,7 +956,7 @@ lol-social-availability-hitbox .availability-icon.open-party{
 }
 
 .mission-button .count-badge{
-  background-color: #000 !important;
+  filter: grayscale(100);
 }
 
 
