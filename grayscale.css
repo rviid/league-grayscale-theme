@@ -168,7 +168,7 @@ lol-uikit-full-page-backdrop {
     width: 1055px;
     height: 718px;
     overflow: hidden;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 .game-type-card .parties-game-type-upper-half {
@@ -176,7 +176,7 @@ lol-uikit-full-page-backdrop {
     cursor: pointer;
     width: 185px;
     height: 230px;
-    filter: grayscale(40%);
+    filter: grayscale(100%);
 }
 
 .parties-header-button-container .back-button-container.back-button-shown {
@@ -376,49 +376,49 @@ lol-social-status .status-message.dnd{
 }
 
 .action-bar-button{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 .alpha-version-panel{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 .summoner-level-ring{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 .navigation-bar{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 .dropdown-container{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   position: relative;
   z-index: 3;
   filter: grayscale(100%);
 }
 
 .cdp-backdrop-component .cdp-backdrop.progression:after{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 .parties-game-type-card-categories{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 lol-uikit-flat-input{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
 lol-uikit-close-button{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
   filter: grayscale(100%);
 }
 
@@ -432,7 +432,7 @@ lol-social-avatar:not([disabled]):hover .summoner-level-ring{
 }
 
 /* lol-uikit-navigation-bar{
-  filter: hue-rotate(-131%);
+  filter: hue-rotate(-131deg);
 } */
 
 .navigation-bar.left{
@@ -448,7 +448,7 @@ lol-regalia-banner-v2-element{
 }
 
 .style-profile-emblem-header-title{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -546,16 +546,16 @@ lol-regalia-banner-v2-element{
 }
 
 .offer-card-unrevealed-loop-video{
-  filter: grayscale(-301%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .loot-display-category-tab .loot-category-tab.selected::after{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 hr{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -569,7 +569,7 @@ hr{
 }
 
 .border{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -582,27 +582,27 @@ hr{
 }
 
 lol-uikit-tooltip-root{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 #lol-uikit-tooltip-root > div{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .style-profile-sub-nav{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .lol-uikit-close-button{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .style-profile-skin-picker-button {
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -611,27 +611,27 @@ lol-uikit-tooltip-root{
 }
 
 .collection-ownership-filter {
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .collection-grouping-options{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .collection-sort-options{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .lock-icon{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .champion-mastery-badge{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -668,7 +668,7 @@ lol-uikit-tooltip-root{
 }
 
 /* lol-uikit-navigation-item{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
 } */
 
 .button-type-secondary{
@@ -692,11 +692,11 @@ lol-uikit-tooltip-root{
 }
 
 #ember821 > div > svg > g{
-  filter: grayscale(-251%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .hextech-loading-animation{
-  filter: grayscale(-251%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .icon-ring{
@@ -734,7 +734,7 @@ lol-social-chat-input .chat-input{
 }
 
 .email{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
@@ -743,27 +743,27 @@ lol-social-chat-input .chat-input{
 }
 
 .dialog-frame{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .dialog-content{
-  filter: hue-rotate(131%) !important;
+  filter: hue-rotate(131deg) !important;
   filter: grayscale(100%);
 } 
 
 :host .lol-uikit-flyout-frame-wrapper.top .sub-border::before, :host .lol-uikit-flyout-frame-wrapper.bottom .sub-border::before{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 :host .lol-uikit-flyout-frame-wrapper.bottom .border{
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 lol-uikit-flat-button-group{
-  /* filter: hue-rotate(-131%); */
+  /* filter: hue-rotate(-131deg); */
 }
 
 lol-uikit-flat-button-secondary{
@@ -791,7 +791,7 @@ lol-uikit-flat-button-secondary{
 }
 
 .mission-tooltip{
-  filter: grayscale(131%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .flyout{
@@ -799,7 +799,7 @@ lol-uikit-flat-button-secondary{
 }
 
 .mission-icon, .mission-reward  {
-  filter: grayscale(131%) !important;
+  filter: grayscale(100%) !important;
 }
 
 /* .mission-tracker-component{
@@ -809,28 +809,28 @@ lol-uikit-flat-button-secondary{
 /* NAVIGATION */
 
 .rcp-fe-lol-collections-collection-details {
-  filter: hue-rotate(-131%) !important;
+  filter: hue-rotate(-131deg) !important;
   filter: grayscale(100%);
 }
 
 .collection-tier-information{
-  filter: hue-rotate(131%) !important;
+  filter: hue-rotate(131deg) !important;
   filter: grayscale(100%);
 }
 
 .collection-tier-information{
-  filter: hue-rotate(131%) !important;
+  filter: hue-rotate(131deg) !important;
   filter: grayscale(100%);
 }
 
 .collection-bottom-info{
-  filter: hue-rotate(131%) !important;
+  filter: hue-rotate(131deg) !important;
   filter: grayscale(100%);
 }
 
 .collections-sub-nav-container{
   z-index: 10 !important;
-  filter: hue-rotate(206%) !important;
+  filter: hue-rotate(206deg) !important;
   filter: grayscale(100%);
 }
 
@@ -882,11 +882,11 @@ lol-uikit-video-state-machine{
 }
 
 .currency-be-icon-container {
-    filter: grayscale(81%);
+    filter: grayscale(100%);
 }
 
 .currency-rp {
-    filter: grayscale(-150%);
+    filter: grayscale(100%);
 }
 .availability-icon.chat.remote{
   /*filter: hue-rotate(55%);*/
@@ -946,7 +946,7 @@ lol-social-panel{
 }
 
 .placeholder-invited-container .placeholder-invited-image {
-  filter: grayscale(50%) !important;
+  filter: grayscale(100%) !important;
 }
 
 lol-social-availability-hitbox .availability-icon.open-party{
@@ -962,7 +962,7 @@ lol-social-availability-hitbox .availability-icon.open-party{
 .ready-check-state-machine-timer{
   animation-name: fadeIn;
   animation-duration: 1.5s;
-  filter: hue-rotate(-290%) !important;
+  filter: hue-rotate(-290deg) !important;
   filter: grayscale(100%);
 }
 
@@ -1008,11 +1008,11 @@ lol-social-availability-hitbox .availability-icon.open-party{
 
 
 .in-matchmaking-search .parties-placeholder-banner{
-  filter: grayscale(60%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .open-party-toggle-wrapper.right .toggle-button{
-  filter: grayscale(220%) !important;
+  filter: grayscale(100%) !important;
 }
 
 .loot-item-visual .shard-overlay{
